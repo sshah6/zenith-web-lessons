@@ -1,0 +1,60 @@
+Create a guessing game with dialogue functions.
+
+	- generate a random number between 1 and 100
+	- prompt the user to enter a number to guess
+	- if the user guesses incorrectly, alert if they've guessed too high or too low and prompt them to guess again
+	- if the user guesses the right number, alert that they've guessed correctly and end the program
+	- (optional) limit the number of guesses and if you run out of guesses, you lose the game
+
+
+
+Create a function, returnStrNums, that takes in a string of characters and returns a string of only the numbers embedded in the string.
+
+Examples...
+
+returnStrNums('abc') // returns ''
+returnStrNums('123') // returns '123'
+returnStrNums('abc123') // returns '123'
+returnStrNums('abc123weg') // returns '123'
+returnStrNums('555aaa') // returns '555'
+returnStrNums('a5a5') // returns '55'
+returnStrNums('ab1c3js4') // returns '134'
+
+
+
+Create a function, returnStrNumsSum, that takes in a string of characters and returns the sum of the numbers embedded in the string. If there are no numbers, return 0.
+
+returnStrNumsSum('abc') // returns 0
+returnStrNumsSum('123') // returns 6
+returnStrNumsSum('abc123') // returns 6
+returnStrNumsSum('abc123weg') // returns 6
+returnStrNumsSum('555aaa') // returns 15
+returnStrNumsSum('a5a5') // returns 10
+returnStrNumsSum('ab1c3js4') // returns 8
+
+
+
+Create a function, moveDigitsTowardFive, that takes in an integer and returns the integer with all the digits moved one closer to the number five. If a digit is five, it should remain the same. You will likely need to convert the number to a string to manipulate each digit and then convert the output back to a number. Assume only integer inputs.
+
+Examples...
+
+moveDigitsTowardFive(5) // returns 5
+moveDigitsTowardFive(159) // returns 258
+moveDigitsTowardFive(456) // returns 555
+moveDigitsTowardFive(236) // returns 345
+moveDigitsTowardFive(19286538) // returns 28375547
+moveDigitsTowardFive(0000) // returns 1111
+moveDigitsTowardFive(99) // returns 88
+
+
+
+Create a function, replaceVowels, that takes in two strings as input. The first string input may have 0 to many characters. The second string input may have 0 to 1 character. The function will return a string that is the equivalent of the first string but every vowel is replaced with the second string. Assume any letter character in the inputs will be in lowercase.
+
+Examples...
+
+replaceVowels('cat', 'z') // returns 'czt'
+replaceVowels('apple', 'z') // returns 'zpplz'
+replaceVowels('codeup', '.') // returns 'c.d..p'
+replaceVowels('', '.') // returns ''
+replaceVowels('aaa', '.') // returns '...'
+replaceVowels('bbb', '.') // returns 'bbb'
