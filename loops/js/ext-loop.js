@@ -46,3 +46,64 @@ console.log("Checking routes. ext-loop-exercise");
 // console.log(getNum('a5a5')) // returns '55'
 // console.log(getNum('ab1c3js4')) // returns '134'
 
+//Getting the numbers out of the mixed string and add them together
+// var stringInt = function getNum(input){
+//     if(typeof input === 'string'){
+//         input = input.split("");
+//         //return input;
+//         var arr = new Array();
+//         for(let i = 0; i < input.length; i++){
+//             //let inputInt = parseInt(input[i]);
+//             if(input[i] == '1' || input[i] == '2' || input[i] == '3' || input[i] == '4' || input[i] == '5'|| input[i] == '6'|| input[i] == '7'|| input[i] == '8'|| input[i] == '9' || input[i] == '0'){
+//             arr.push(input[i]); 
+//         }
+//     }
+//         //arr = arr.join('');
+//         return arr;      
+//     }else{
+//         return false;
+//     }
+// }
+// var funcOut = stringInt("abc123765"); //assigning the function to a variable
+// console.log("the output array is a string " + funcOut);
+// var realDigits = funcOut.map(Number); // Changing the output array to array od integers
+// console.log("Now the output array is array of ints: " + realDigits);
+// var sum = realDigits.reduce(myFunction);// using reduce function ot add elements or an array
+// function myFunction(total, value){
+//     return total + value;
+// }
+// console.log("Sum of all elements of int array: "+sum) // returns '123'
+
+
+//Moving each single digit of a number towards ot 5 if it is 5 then return itself
+// function moveDigitsTowardFive(number){
+//     var digitArr = number.toString().split('');
+//     var realDigits = digitArr.map(Number);
+//     //return digitArr;
+//     //return realDigits;
+//     for(let i = 0; i < realDigits.length; i++){
+//         if(realDigits[i] > 5){
+//             realDigits[i] -= 1;
+//         }else if(realDigits[i] < 5){
+//             realDigits[i] +=1;
+//         }   
+//     }
+//     //return realDigits;
+//     realDigits = realDigits.join("");
+//     return realDigits;
+// }
+
+// console.log(moveDigitsTowardFive(5)); // returns 5
+// console.log(moveDigitsTowardFive(159)); // returns 258
+// console.log(moveDigitsTowardFive(456)); // returns 555
+// console.log(moveDigitsTowardFive(236)); // returns 345
+// console.log(moveDigitsTowardFive(19286538)); // returns 28375547
+// console.log(moveDigitsTowardFive(0000)); // returns 1111
+// console.log(moveDigitsTowardFive(99)); // returns 88
+
+//replaces the the vowels with the second argument of the function
+function replaceVowels(input, val){
+    if(isNaN(input, val) === true){
+        
+    }
+}
