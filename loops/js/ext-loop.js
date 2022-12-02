@@ -78,7 +78,9 @@ console.log("Checking routes. ext-loop-exercise");
 //Moving each single digit of a number towards ot 5 if it is 5 then return itself
 // function moveDigitsTowardFive(number){
 //     var digitArr = number.toString().split('');
+//     console.log(digitArr);
 //     var realDigits = digitArr.map(Number);
+//     console.log(realDigits);
 //     //return digitArr;
 //     //return realDigits;
 //     for(let i = 0; i < realDigits.length; i++){
@@ -102,8 +104,8 @@ console.log("Checking routes. ext-loop-exercise");
 // console.log(moveDigitsTowardFive(99)); // returns 88
 
 //replaces the the vowels with the second argument of the function
-function replaceVowels(input, val){
-    if(isNaN(input, val) === true){
-        
-    }
-}
+// function replaceVowels(input, val){
+//     if(isNaN(input, val) === true){
+
+//     }
+// }
