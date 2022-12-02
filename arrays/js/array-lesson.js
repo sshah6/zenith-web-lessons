@@ -40,7 +40,8 @@ console.log("Checking routes, array lesson");
 let foods = ['aburger', 'taco', 'eburrito', 'broth', 'steak', 'ucheckin', 'lamd', 'goat'];
 //Note: first is looking at the first element of an array and the second[]is looking at the first element of element of array, like: two dimensional
 for(let i = 0; i < foods.length; i++){
-    if(foods[i][0] == 'a' || foods[i][0] == 'e' || foods[i][0] == 'i' || foods[i][0] == 'o' || foods[i][0] == 'u'){
+    let firstChar = foods[i][0];
+    if(firstChar == 'a' || firstChar == 'e' || firstChar == 'i' || firstChar == 'o' || firstChar == 'u'){
         console.log(foods[i]);
     }
 }
