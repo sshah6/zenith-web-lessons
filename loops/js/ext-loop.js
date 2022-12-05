@@ -106,6 +106,16 @@ console.log("Checking routes. ext-loop-exercise");
 //replaces the the vowels with the second argument of the function
 // function replaceVowels(input, val){
 //     if(isNaN(input, val) === true){
-
+//         for(let i = 0; i , input.length; i++){
+//           return input.replace(/a|e|i|o|u/gi, val);
+//         }
+//     }else{
+//         return '';
 //     }
 // }
+// console.log(replaceVowels('cat', 'z')) // returns 'czt'
+// console.log(replaceVowels('apple', 'z')) // returns 'zpplz'
+// console.log(replaceVowels('codeup', '.')) // returns 'c.d..p'
+// console.log(replaceVowels('', '.')) // returns ''
+// console.log(replaceVowels('aaa', '.')) // returns '...'
+// console.log(replaceVowels('bbb', '.')) // returns 'bbb'
