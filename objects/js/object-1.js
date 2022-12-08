@@ -2,8 +2,8 @@
 
 console.log("Checking routes for object-1.");
 //objects allow us to group together state (values) and behavior (functions).
-const dog = new Object();
-console.log(typeof dog);
+// const dog = new Object();
+// console.log(typeof dog);
 
 //new way to declare object
 
@@ -122,10 +122,10 @@ const pets = [
 
   // 2. Change the names of all users to "John Doe"
 
-  users.forEach(function(user){
-    user.givenName = "John Doe"
-    console.log(user.givenName);
-  });
+//   users.forEach(function(user){
+//     user.givenName = "John Doe"
+//     console.log(user.givenName);
+//   });
   // 3. Increase the current age of all users by 1
     users.forEach(function(user){ 
         console.log(user.age + 1);
@@ -147,6 +147,9 @@ const pets = [
     console.log(ave);
     // log all the user information in the following format...
 
+    users.forEach(function(user){
+        console.log(`user: ${user.givenName} | age: ${user.age}`);
+    })
   /*
       user: Sam | age: 21
       user: Cathy | age: 34
@@ -179,3 +182,42 @@ for(let i = 0; i < users1.length; i++){
         
     }
 }console.log(longest);
+
+//=====================> Assigning functionality to an object <===============
+
+ const dog1 = {
+      petName: 'Sparky',
+      age: 4,
+      bark: function() {
+          console.log("Woof woof!");
+      },                                    //*********************************** */
+      eat: function(food) {                 //A method is a function inside an object
+          console.log('Dog is eating...' + food);
+      },
+      agePet: function() {
+          this.age += 1;        //(this) refers to the object when its in that object.
+      }
+  }
+  dog1.bark();
+  dog1.agePet();
+  console.log(dog1);
+
+
+ const dog2 = {
+      petName: 'Dino',
+      age: 10,
+      bark: function() {
+          console.log("Woof woof!");
+      },
+      eat: function(food) {
+          console.log('Dog is eating...' + food);
+      },
+      agePet: function() {
+          this.age += 1;
+      }
+  }
+
+  dog2.bark(); // when the bark is called, it is calling the function that is associated to it.
+  dog2.eat("fruit"); 
+  //dog.agePet();
+  console.log(dog2);
