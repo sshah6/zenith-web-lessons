@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+      <!--GET throws the info in url and POST does not-->
+      <!--If no method it defaults to GET request-->
+    <form action="https://request-inspector.glitch.me/" method="GET">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="type username" value=""> <br><br>
+        <label for="userage">Age</label>
+        <input id="userage" name="userage" type="number" placeholder="type age" value="">
+        <button>Submit</button>
+    </form>
+    <br><br><br><br>
+    <form action="https://request-inspector.glitch.me/" method="POST">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="type username" value=""> <br><br>
+        <label for="userage">Age</label>
+        <input id="userage" name="userage" type="number" placeholder="type age" value="">
+        <button>Submit</button>
+    </form>
+
+    </body>
+</html>
