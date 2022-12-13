@@ -28,8 +28,8 @@ Example for Times New Roman: */
     color:blue
 }
 
-.first-h1-q4{
-
+#answer4{
+    color:brown;
 }
 
 .first-h1-q5{
@@ -54,9 +54,25 @@ Example for Times New Roman: */
     font-size: 40px;
     color: grey;
 }
+
 .first-h1-q8{
-    
+    letter-spacing: normal;
+    color:blue;  
+}
+.second-h1-q8{
+    letter-spacing: 2px;
+    color:blue;  
+}
+.third-h1-q8{
+    letter-spacing: 0.1em;
+    color:blue;  
 }
 .first-h1-q9{
-    
+text-transform: capitalize;
+}
+.second-h1-q9{
+    text-transform: uppercase;
+}
+.third-h1-q9{
+    text-transform: lowercase;
 }

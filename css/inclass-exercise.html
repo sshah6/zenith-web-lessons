@@ -10,33 +10,93 @@
        
         <p>
             1-  What is a font stack and how should the best one be chosen?<br>
+            <p>Answer: A font stack is a list of fonts in the CSS font-family, all separated by <br>commas. Fonts are listed in order of preference that you would like them to<br> appear in case of a problem, such as a font not working in the selected <br>browser
+                Example for Times New Roman:</p>
             <h1 class="first-h1-q1">Text and Font Properties 1 (Group 3)</h1>
             <h1 class="second-h1-q1">Text and Font Properties 1 (Group 3)</h1><br>
             2-  What is the difference between serif and sans serif font?<br>
+            <p>So, in a nutshell, serif fonts have those decorative lines or tapers (also <br>commonly referred to as “tails” or “feet”) while sans serif fonts don't</p>
             <h1 class="first-h1-q2">Text and Font Properties 1 (Group 3)</h1>
             <h1 class="second-h1-q2">Text and Font Properties 1 (Group 3)</h1><br>
             3-  How can a developer use a Google font?<br>
+            You can choose one of 2 methods to use a google/web font.
+
+        Option 1
+
+        Online font services generally store and serve fonts for you so you don't have to <br>worry about writing the @font-face code. Instead, you generally just need to <br>insert a simple line or two of code into your site to make everything work. <br>Examples include Adobe Fonts and Cloud.typography. Most of these services are<br> subscription-based, with the notable exception of Google Fonts, a useful <br>free service, especially for rapid testing work and writing demos.<br>
+
+        On the html page in the header link to the font with a link elelment above the css <br>stylesheet. (So it will load into the CSS stylesheet)<br>
+<p>
+        //< link href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:wght@300&family=Quintessential&display=swap" rel="stylesheet">
+</p>
+        After this you can call the desired font in the CSS style sheet.<br>
+<p>
+        //h1{
+        //font: Tangerine;
+        //}
+</p>
+        Option 2
+
+        To store the font locally you can download a .zip file of your desired font. Store <br>this zip file in the same directory as your css/html files. On your stylesheet.<br>css at the very top of the page you will need to insert "@font-face rulesets"
+
+        <p>
+            //@font-face {
+        //font-family: "zantrokeregular";
+        //src: url("fonts/zantroke-webfont.woff2") format("woff2"), url("fonts/<br>zantroke-webfont.woff")
+        //format("woff");
+        //font-weight: normal;
+       // font-style: normal;
+       // }
+
+        //font-family: "zantrokeregular", serif;
             <h1 class="first-h1-q3">Text and Font Properties 1 (Group 3)</h1>
             <h1 class="second-h1-q3">Text and Font Properties 1 (Group 3)</h1><br>
             4-  How can a developer figure out what font is being used on a             given web page?<br>
+            <p id="answer4">Answer4.  Open the console. Use the Elements tab. Select the text (body) in the <br>console. Click on the Computed tab in the lower portion of the console and <br>search for "font-family." To see the CSS related to the font, look under the <br>Styles tab. You can scroll through to search for font-related values. <br>However, as there might be overrides and irrelevant style rules here, the <br>Computed tab is usually more helpful.</p>
             <h1 class="first-h1-q4">Text and Font Properties 1 (Group 3)</h1>
             <h1 class="second-h1-q4">Text and Font Properties 1 (Group 3)</h1><br>
-            5-  Prepare code examples to present answers to the following           questions:<br>
+           <!--5-  Prepare code examples to present answers to the following           questions:<br>
             <h1 class="first-h1-q5">Text and Font Properties 1 (Group 3)</h1>
-            <h1 class="second-h1-q5">Text and Font Properties 1 (Group 3)</h1><br>
+            <h1 class="second-h1-q5">Text and Font Properties 1 (Group 3)</h1><br>--> 
             6-  What is a websafe font?<br>
+            <p>Websafe fonts are fonts that are included with most operating systems. Some <br>examples of Web safe serif fonts include Georgia and Times New Roman.<br>
+                In CSS this would look like
+                </p>
             <h1 class="first-h1-q6">Text and Font Properties 1 (Group 3)</h1>
             <h1 class="second-h1-q6">Text and Font Properties 1 (Group 3)</h1><br>
              7- What is the difference between using pixels, ems, and rems?<br>
+             <p>.main-header p {
+                font-size: 14px;
+                }
+                Pixels are a unit of measurement that are based on set sizing. They are the<br> unit for measuring dimensions on a screen and are used when precise <br>design is required.
+                //////////////////////////////////////////////<br>
+                .three {
+                font-size: 2em;
+                }
+                In most cases, unless browser default is set to something else, an em is 16<br> px.
+                /////////////////////////////////////////////////////////////////////////////<br>/////////////////////
+                .one {
+                font-size: 1.2rem; /* 1.2 x the value set in html */<br>
+                }
+                by default each rem will equal 16px, unless there is a pre determined root
+                <br>.</p>
              <h1 class="first-h1-q7">Text and Font Properties 1 (Group 3)</h1>
              <h1 class="second-h1-q7">Text and Font Properties 1 (Group 3)</h1>
             <h1 class="third-h1-q7">Text and Font Properties 1 (Group 3)</h1><br>
              8- How can the space between letters in CSS be controlled?<br>
+             <p>The space inbetween letters in CSS can be controlled by using the <br>"letter-spacing" attribute. Below are some examples.
+            </p>
              <h1 class="first-h1-q8">Text and Font Properties 1 (Group 3)</h1>
-            <h1 class="second-h1-q8">Text and Font Properties 1 (Group 3)</h1><br>
+             <h1 class="second-h1-q8">Text and Font Properties 1 (Group 3)</h1>
+            <h1 class="third-h1-q8">Text and Font Properties 1 (Group 3)</h1><br>
             9-  How can the case of letters be changed purely with CSS?<br>
+            <p>text-transform: capitalize;<br>
+                text-transform: uppercase;<br>
+                text-transform: lowercase;
+                <br></p>
             <h1 class="first-h1-q9">Text and Font Properties 1 (Group 3)</h1>
-            <h1 class="second-h1-q9">Text and Font Properties 1 (Group 3)</h1><br>
+            <h1 class="second-h1-q9">Text and Font Properties 1 (Group 3)</h1>
+            <h1 class="third-h1-q9">Text and Font Properties 1 (Group 3)</h1><br>
         </p>
     </body>
 </html>
