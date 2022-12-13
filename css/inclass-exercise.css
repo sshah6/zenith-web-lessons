@@ -1,0 +1,62 @@
+.header{
+    font-family: Arial;
+    text-align: center;
+}
+.first-h1-q1 {
+/*A font stack is a list of fonts in the CSS font-family, all separated by commas. Fonts are listed in order of preference that you would like them to appear in case of a problem, such as a font not working in the selected browser
+Example for Times New Roman: */
+    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;   
+}
+.second-h1-q1{
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+}
+
+
+.first-h1-q2{
+    font-family: serif;
+    color: red;
+}
+.second-h1-q2{
+    font-family: sans-serif;
+    color: red;
+}
+
+
+.first-h1-q3, .second-h1-q3{
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    color:blue
+}
+
+.first-h1-q4{
+
+}
+
+.first-h1-q5{
+    
+}
+.first-h1-q6{
+
+    font-family: Tahoma, Arial, sans-serif;
+    color: purple;
+      
+}
+.first-h1-q7{
+    
+    font-size: 1em;
+    color: grey;
+}
+.second-h1-q7{
+    font-size: 2rem;
+    color: grey;
+}
+.third-h1-q7{
+    font-size: 40px;
+    color: grey;
+}
+.first-h1-q8{
+    
+}
+.first-h1-q9{
+    
+}
