@@ -10,8 +10,8 @@
        
         <p>
             1-  What is a font stack and how should the best one be chosen?<br>
-            <p>Answer: A font stack is a list of fonts in the CSS font-family, all separated by <br>commas. Fonts are listed in order of preference that you would like them to<br> appear in case of a problem, such as a font not working in the selected <br>browser
-                Example for Times New Roman:</p>
+            <p>Answer: A font stack is a list of fonts in the CSS font-family, all separated by <br>commas. Fonts are listed in order of preference that you would like them to<br> appear in case of a problem, such as a font not working in the selected browser.
+                <br>Example for Times New Roman:</p>
             <h1 class="first-h1-q1">Text and Font Properties 1 (Group 3)</h1>
             <h1 class="second-h1-q1">Text and Font Properties 1 (Group 3)</h1><br>
             2-  What is the difference between serif and sans serif font?<br>
@@ -26,29 +26,21 @@
         Online font services generally store and serve fonts for you so you don't have to <br>worry about writing the @font-face code. Instead, you generally just need to <br>insert a simple line or two of code into your site to make everything work. <br>Examples include Adobe Fonts and Cloud.typography. Most of these services are<br> subscription-based, with the notable exception of Google Fonts, a useful <br>free service, especially for rapid testing work and writing demos.<br>
 
         On the html page in the header link to the font with a link elelment above the css <br>stylesheet. (So it will load into the CSS stylesheet)<br>
-<p>
+        <p>
         //< link href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:wght@300&family=Quintessential&display=swap" rel="stylesheet">
-</p>
+        </p>
         After this you can call the desired font in the CSS style sheet.<br>
-<p>
+        <p>
         //h1{
         //font: Tangerine;
         //}
-</p>
+        </p>
         Option 2
 
         To store the font locally you can download a .zip file of your desired font. Store <br>this zip file in the same directory as your css/html files. On your stylesheet.<br>css at the very top of the page you will need to insert "@font-face rulesets"
 
         <p>
-            //@font-face {
-        //font-family: "zantrokeregular";
-        //src: url("fonts/zantroke-webfont.woff2") format("woff2"), url("fonts/<br>zantroke-webfont.woff")
-        //format("woff");
-        //font-weight: normal;
-       // font-style: normal;
-       // }
-
-        //font-family: "zantrokeregular", serif;
+           <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts" >For option 2 example go to this link</a>
             <h1 class="first-h1-q3">Text and Font Properties 1 (Group 3)</h1>
             <h1 class="second-h1-q3">Text and Font Properties 1 (Group 3)</h1><br>
             4-  How can a developer figure out what font is being used on a             given web page?<br>
@@ -67,17 +59,17 @@
              7- What is the difference between using pixels, ems, and rems?<br>
              <p>.main-header p {
                 font-size: 14px;
-                }
+                }<br>
                 Pixels are a unit of measurement that are based on set sizing. They are the<br> unit for measuring dimensions on a screen and are used when precise <br>design is required.
                 //////////////////////////////////////////////<br>
                 .three {
                 font-size: 2em;
-                }
+                }<br>
                 In most cases, unless browser default is set to something else, an em is 16<br> px.
                 /////////////////////////////////////////////////////////////////////////////<br>/////////////////////
                 .one {
                 font-size: 1.2rem; /* 1.2 x the value set in html */<br>
-                }
+                }<br>
                 by default each rem will equal 16px, unless there is a pre determined root
                 <br>.</p>
              <h1 class="first-h1-q7">Text and Font Properties 1 (Group 3)</h1>
