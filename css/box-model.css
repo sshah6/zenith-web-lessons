@@ -1,0 +1,31 @@
+
+body {
+  background: black;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  background: purple;
+  margin: 0; /*does not count as part of the element, its the distance from the other elements*/
+}
+
+.box {
+  color: white;
+  height: 200px;
+  width: 200px;
+  /*padding: 30px;*/  /* Padding and border counts as part of the element*/
+  /*border: 5px solid red;*/
+}
+
+.box1 {
+  background: blue;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+
+.box2 {
+  background: green;
+  /*box-sizing: border-box;*//*adds the entire padding and border inside the box*/
+}
+/*When calculating the size of a box, the padding and border count with the width or height of the element*/

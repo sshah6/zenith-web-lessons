@@ -221,3 +221,44 @@ for(let i = 0; i < users1.length; i++){
   dog2.eat("fruit"); 
   //dog.agePet();
   console.log(dog2);
+
+
+  //################# in class exercise ###################
+  //================================= WARM UP
+
+// Create a function, findAverageDogAge, that takes in a array of pet objects with age properties and returns the average age of a dog.
+
+const allPets = [
+	{
+		name: 'Sparky',
+		type: 'Fish',
+		age: 4
+	},
+	{
+		name: 'Mr. Pig',
+		type: 'Cat',
+		age: 4
+	},
+	{
+		name: 'Bubba',
+		type: 'Dog',
+		age: 5
+	},
+	{
+		name: 'Pickles',
+		type: 'Dog',
+		age: 10
+	}
+];
+function getAverage(input){
+    let ave = 0;
+    let counter = 0;
+    for(let i = 0; i < input.length; i++){
+        if(input[i].type == 'Dog'){ 
+            counter++;
+            ave = ave + input[i].age;
+        }    
+    }    
+   return ave / counter; 
+}
+console.log(getAverage(allPets)) // returns 7.5
