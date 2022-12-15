@@ -155,7 +155,7 @@ const pets = [
       user: Cathy | age: 34
       user: Karen | age: 43
    */
-    console.log(users);
+    //console.log(users);
   // log the name of the longest given name of a user
 
 
@@ -181,7 +181,8 @@ for(let i = 0; i < users1.length; i++){
         longest = users1[i].givenName
         
     }
-}console.log(longest);
+}
+//console.log(longest);
 
 //=====================> Assigning functionality to an object <===============
 
@@ -250,15 +251,70 @@ const allPets = [
 		age: 10
 	}
 ];
-function getAverage(input){
+// function getAverage(input){
+//     let ave = 0;
+//     let counter = 0;
+//     for(let i = 0; i < input.length; i++){
+//         if(input[i].type == 'Dog'){ 
+//             counter++;
+//             ave = ave + input[i].age;
+//         }    
+//     }    
+//    return ave / counter; 
+// }
+
+function getAverage(allPets){
     let ave = 0;
-    let counter = 0;
-    for(let i = 0; i < input.length; i++){
-        if(input[i].type == 'Dog'){ 
-            counter++;
-            ave = ave + input[i].age;
-        }    
-    }    
-   return ave / counter; 
+    let count = 0;
+    allPets.forEach(function(pet){
+        if(pet.type === "Dog"){
+            ave += pet.age;
+            count++;
+        }
+    });
+    return ave / count;
 }
-console.log(getAverage(allPets)) // returns 7.5
+//console.log(getAverage(allPets)) // returns 7.5
+
+//Print t
+// Create a function, returnPetsWithNoFish, that takes in a array of pet objects and returns an array of pet objects with no pets of type 'Fish'.
+
+const goodPets = [
+  {
+    name: 'Sparky',
+    type: 'Fish',
+    age: 4
+  },
+  {
+    name: 'Mr. Pig',
+    type: 'Cat',
+    age: 4
+  },
+  {
+    name: 'Bubba',
+    type: 'Dog',
+    age: 5
+  },
+  {
+    name: 'Beans',
+    type: 'Dog',
+    age: 3
+  },
+  {
+    name: 'Mr. Salmon',
+    type: 'Fish',
+    age: 1
+  }
+];
+
+function removeFis(goodPets){
+    goodPets.forEach(function(pet){
+        if(pet.type === "Fish"){
+           delete(pet.name);
+           delete(pet.type);
+           delete(pet.age);
+        }
+    });
+    return goodPets;
+}
+console.log(removeFis(goodPets));
