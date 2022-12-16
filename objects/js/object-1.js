@@ -318,3 +318,63 @@ function removeFis(goodPets){
     return goodPets;
 }
 console.log(removeFis(goodPets));
+
+//=======> warm up in class <==========
+
+// Create a function, returnLongestPetName, that takes in a array of pet objects and returns a string of the longest name for a pet.
+
+const coolPets = [
+  {
+    name: 'Sparky',
+    type: 'Fish',
+    age: 4
+  },
+  {
+    name: 'Mr. Pig',
+    type: 'Cat',
+    age: 4
+  },
+  {
+    name: 'Bubba',
+    type: 'Dog',
+    age: 5
+  },
+  {
+    name: 'Beans',
+    type: 'Dog',
+    age: 3
+  },
+  {
+    name: 'Mr. Salmon',
+    type: 'Fish',
+    age: 1
+  }
+];
+//console.log(coolPets[i].name.length);
+
+
+// function returnLongestPetName(pet){
+//     let len = 0;
+//     let longest;
+//    for(let i = 0; i < pet.length; i++){
+//         if(pet[i].name.length > len){
+//             len = pet[i].name.length;
+//             longest = pet[i].name;
+//         }
+//     }
+//     console.log(longest);
+// }
+// returnLongestPetName(coolPets) // returns 'Mr. Salmon'
+
+function returnLongestPetName(coolPets){
+    let len = 0;
+    let longest;
+   coolPets.forEach(function(pet){
+        if(pet.name.length > len){
+            len = pet.name.length;
+            longest = pet.name;
+        }
+    });
+    console.log("This is the longest: "+ longest);
+}
+returnLongestPetName(coolPets) // returns 'Mr. Salmon'
