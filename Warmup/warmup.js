@@ -84,5 +84,98 @@ function filterList(input){
         }
     return array;
 }
-console.log(filterList([1, 2, "a", "b"]));
-console.log(filterList([1,2,"aasf","1","123",123]));
+// console.log(filterList([1, 2, "a", "b"]));
+// console.log(filterList([1,2,"aasf","1","123",123]));
+
+
+// Create a function, zipArrays, that takes two array inputs of the same length and returns an array with the elements of both arrays alternating in the order of first[0], second[0], first[1], second[1], etc. If both arrays are empty, return an empty array.
+
+
+// zipArrays([], []) // returns []
+// zipArrays([1], [2]) // returns [1, 2]
+// zipArrays(['a', 'b'], ['c', 'd']) // returns... ['a', 'c', 'b', 'd']
+// zipArrays([1,2,'a','b'], ['bob', null, 'sally', 25]) // returns... 
+
+// [
+//   1, 
+//   'bob', 
+//   2, 
+//   null, 
+//   'a', 
+//   'sally',
+//   'b',
+//   25
+// ]
+
+function zipArrays(arr1, arr2){
+    let result = [];
+    for(let i = 0; i < arr1.length; i ++){
+        result.push(arr1[i]);
+        result.push(arr2[i]);
+    }
+    return result;
+}
+// console.log(zipArrays(['a', 'b'], ['c', 'd'])); // returns... ['a', 'c', 'b', 'd']
+// console.log(zipArrays([1], [2])); // returns [1, 2]
+// console.log(zipArrays([1,2,'a','b'], ['bob', null, 'sally', 25]));
+// console.log(zipArrays([], [])); // returns []
+
+// ================================= WARM UP
+
+// Write a function, getUserCredentials, that takes in a list of user objects and returns a list of user objects with only the username and password properties. Assume at least an array of one user object.
+
+
+const users = [
+  {
+    firstName: 'Justin',
+    lastName: 'Reich',
+    dob: '1923-01-01',
+    username: 'jreich',
+    password: '$2y$10$UJlsa5vWq5DUKJjyO38gM.dCZfudWOFCrLWQosh0mhXKaZmRmvDse'
+  },
+  {
+    firstName: 'Sally',
+    lastName: 'Smith',
+    dob: '1935-03-11',
+    username: 'ssmith',
+    password: '$2y$10$VaLGU5.7uQLr.eg6kSI9seOcP4JY4XktWt28I9JgblAGIDpkDXbya'
+  },
+  {
+    firstName: 'Fred',
+    lastName: 'Smith',
+    dob: '1999-01-21',
+    username: 'fsmith',
+    password: '$2y$10$3USt6Dl8TNMkeh0KioPnfeVpynAotXvSIJ5xrzAHragPEAWMYEBNS'
+  },
+]
+
+// getUserCredentials(users) // returns...
+
+/*
+
+[
+  {
+    username: 'jreich',
+    password: '$2y$10$UJlsa5vWq5DUKJjyO38gM.dCZfudWOFCrLWQosh0mhXKaZmRmvDse'
+  },
+  {
+    username: 'ssmith',
+    password: '$2y$10$VaLGU5.7uQLr.eg6kSI9seOcP4JY4XktWt28I9JgblAGIDpkDXbya'
+  },
+  {
+    username: 'fsmith',
+    password: '$2y$10$3USt6Dl8TNMkeh0KioPnfeVpynAotXvSIJ5xrzAHragPEAWMYEBNS'
+  }
+]
+
+*/
+function getUserCredentials(user){
+    let userPass = new Array();
+    for(let i = 0; i < user.length; i++){
+        userPass.push({userName: user[i].firstName , password: user[i].password});
+        // userPass.push(new Object({username: user[i].firstName , password: user[i].password}));
+    }
+    return userPass;
+}
+console.log(getUserCredentials(users));
+
