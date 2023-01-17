@@ -187,3 +187,14 @@ for (let i = 0; i < 10; i++) {
 
 // desired output : 0, 1 ,2,  3, 4, 5, 6, 7, 8, 9
 
+// Create a function, shiftElementsOver, that takes in an array and returns the array with all elements moved one index further into the array. The final element should be moved to the front. Assume the input array will have three or more elements.
+
+function shiftElementsOver(input){
+  if(typeof input === 'object'){
+    let inputPop = input.pop();
+    input.unshift(inputPop);
+    return input;
+  }
+}
+console.log(shiftElementsOver([1, 2, 3, 4, 5])); // returns [5, 1, 2, 3, 4]
+ 
