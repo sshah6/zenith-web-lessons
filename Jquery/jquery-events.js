@@ -5,19 +5,27 @@ $(document).ready(function(){
     // })
 
     //In JQuery
-    let $login = $('#log-in');
-    $login.on('mouseover', function(){
-        alert("Button pushed");
-    });
-    
     // let $login = $('#log-in');
-    $login.on('mousein', function(){
-        alert("Button pushed");
-    });
+    // $login.on('mouseover', function(){
+    //     alert("Button pushed");
+    // });
     
-    // let $login = $('#log-in');
-    $login.on('mouseout', function(){
-        alert("Button pushed");
-    });
+    // // let $login = $('#log-in');
+    // $login.on('mousein', function(){
+    //     alert("Button pushed");
+    // });
     
+    // // let $login = $('#log-in');
+    // $login.on('mouseout', function(){
+    //     alert("Button pushed");
+    // });
+
+    $(document).keydown(function(event){
+        let keyPressed = key.keyCode;
+
+        if(keyPressed == 32){
+            alert("hi");
+            console.log("space pressed")
+        }
+    });  
 });

@@ -179,11 +179,11 @@ function getUserCredentials(user){
 }
 // console.log(getUserCredentials(users));
 
-for (let i = 0; i < 10; i++) {
-  console.log("The value of i is " + i);
-   i++;
-   i--;
-}
+// for (let i = 0; i < 10; i++) {
+//   console.log("The value of i is " + i);
+//    i++;
+//    i--;
+// }
 
 // desired output : 0, 1 ,2,  3, 4, 5, 6, 7, 8, 9
 
@@ -196,5 +196,79 @@ function shiftElementsOver(input){
     return input;
   }
 }
-console.log(shiftElementsOver([1, 2, 3, 4, 5])); // returns [5, 1, 2, 3, 4]
+// console.log(shiftElementsOver([1, 2, 3, 4, 5])); // returns [5, 1, 2, 3, 4]
  
+// ================================= WARM UP
+
+// Write a function that takes a neighborhood object and determines if it is desirable. A neighborhood is desirable if the median home price is less than 300000, crime rates are low, and the total rating of schools is at least 24.
+
+// example data...
+
+const neighborhood1 = {
+    neighborhood: "Lovely Estates",
+    medianHomePrice: 280000,
+    pool: true,
+    tennis: false,
+    crimeRate: "low",
+    schools: [
+        {name: "Elementary School", rating: 8},
+        {name: "Middle School", rating: 6},
+        {name: "High School", rating: 8}
+    ]
+};
+
+const neighborhood2 = {
+    neighborhood: "Luminous Estates",
+    medianHomePrice: 270000,
+    pool: true,
+    tennis: false,
+    crimeRate: "high",
+    schools: [
+        {name: "Elementary School", rating: 8},
+        {name: "Middle School", rating: 8},
+        {name: "High School", rating: 8}
+    ]
+}
+
+const neighborhood3 = {
+    neighborhood: "Oak Mountain",
+    medianHomePrice: 290000,
+    pool: false,
+    tennis: false,
+    crimeRate: "low",
+    schools: [
+        {name: "Elementary School", rating: 8},
+        {name: "Middle School", rating: 8},
+        {name: "High School", rating: 8}
+    ]
+}
+
+const neighborhood4 = {
+    neighborhood: "Ginormous Acres",
+    medianHomePrice: 350000,
+    pool: true,
+    tennis: true,
+    crimeRate: "low",
+    schools: [
+        {name: "Elementary School", rating: 9},
+        {name: "Middle School", rating: 9},
+        {name: "High School", rating: 9}
+    ]
+}
+
+function findFavorableNeighborhood(input){
+
+  let schoolRating = 0;
+  for(let j = 0; j < input.schools.length; j++){
+    schoolRating += input.schools[j].rating;
+  }
+    if(input.medianHomePrice < 300000 && input.crimeRate === 'low' && schoolRating >= 24){ 
+      console.log("Favorable Neighborhood.");
+    }else{
+      console.log("Neigborhood is not favorable.");
+    }
+}
+// findFavorableNeighborhood(neighborhood1) // returns false due to school rating
+// findFavorableNeighborhood(neighborhood2) // returns false due to crime rate
+// findFavorableNeighborhood(neighborhood3) // returns true
+// findFavorableNeighborhood(neighborhood4) // returns false due to median home price
