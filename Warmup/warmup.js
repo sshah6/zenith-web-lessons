@@ -272,3 +272,22 @@ function findFavorableNeighborhood(input){
 // findFavorableNeighborhood(neighborhood2) // returns false due to crime rate
 // findFavorableNeighborhood(neighborhood3) // returns true
 // findFavorableNeighborhood(neighborhood4) // returns false due to median home price
+
+// Create a function, encodeStr, that takes in a string and returns the string of characters with the following substitutions:
+//
+// ‘a’ or ‘A’ becomes ‘@’
+// ‘i’ or ‘I’ becomes ‘1’
+// ‘s’ or ‘S’ becomes ‘$’
+//
+function encodeStr(input){
+  let lowerC = input.toLowerCase();
+  lowerC = lowerC.replaceAll('i', "1");
+  lowerC = lowerC.replaceAll('a', "@");
+  lowerC = lowerC.replaceAll('s', "$");
+  return lowerC;
+}
+// console.log(encodeStr('apple')); // returns ‘@pple’
+// console.log(encodeStr('codeup')); // returns ‘codeup’
+// console.log(encodeStr('SASS')); // returns ‘$@$$’
+// console.log(encodeStr('bike')); // returns ‘b1ke’
+// console.log(encodeStr('CODEUP'));
