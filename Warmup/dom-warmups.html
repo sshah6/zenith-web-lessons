@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Background</title>
+<style>
+    .red{
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+<h1>The button changes the background Color</h1>
+<p>Click the button to change the background color.</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<button id="button">Chang background</button>
+
+<script>
+    // $('#button').on('click', function(){
+    //     // alert("Hi");
+    //     $('body').css("background-color", 'red');
+    // });
+//Extra Challenge
+    // $('button').on('click', function(){
+    //     $('body').toggleClass('red');
+    // });
+
+//With Vanilla JS
+        document.querySelector('button').addEventListener('click', function(){
+            document.querySelector('body').style.backgroundColor = 'red';
+        })
+</script>
+
+</body>
+</html>
