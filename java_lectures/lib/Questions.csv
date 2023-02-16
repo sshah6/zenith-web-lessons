@@ -1,0 +1,53 @@
+
+================================= OOP REVIEW
+-- QUESTIONS --
+What are packages in Java?
+The folder where you put java and class files.
+
+What is the difference between a class and an object?
+Class is the bluePrint for objects.
+class = data types;
+objects are the value of data types;
+
+What is instantiation and what syntax is needed to do it?
+When an instance of a class (object) is created.
+
+How are instance variables with public visibility accessed and changed?
+Thye can be accessed and changes from anywhere.
+Post post = new Post();
+sout(post.title);
+post.title = "my blog post";
+
+What are instance variables?
+characteric / value / state / variable for an object.
+
+What is displayed when printing out an object?
+object ID unless override to string().
+
+Class Post{
+    STring title;
+    int numberofviews;
+    User author;
+}
+
+What are instance methods?
+created an object - a method for objects to use.
+
+What is the difference between static and instance methods/variables?
+an instance method is used to access / change object variables
+static to gather data.
+
+What is an instance and what is instantiation?
+Creating the instance is instantiation - creating an object
+
+What is an object in Java?
+is an instance of a class.
+
+What is a class in Java?
+blue print to create and object.
+
+What is the difference between a class and an object?
+class is the blueprint of object- object provides the values for the class.
+
+What is a constructor?
+The same as the name of the class, very helpful to provide the values of an object through it.
