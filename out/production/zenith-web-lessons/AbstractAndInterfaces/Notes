@@ -1,0 +1,116 @@
+-- PRE-READING QUESTIONS
+What is an abstract class?
+(1) A class that has Abstract name in it and it usually used to extend to other classes.
+Cannot be instantiated because its too general.
+Like:
+Abstract Class Building
+Abstract Public building:
+//Now at this makes sense to
+Library
+civic center
+
+What is an interface?
+(2) An special case of abstract class, 3 rules: all methods are public, all properties are public static or final. npt static method.
+
+What can an abstract class do that an interface can’t?
+(3) Abstract classes can have, constructors, instance variables, no abstract method, abstract and non abstract methods while interfaces cannot.
+
+Does the idea of a bicycle match more closely with an abstract class or interface?
+(4) More abstract class, it has common things with other bikes and is more like a concept than an implementation.
+
+Does the idea of “repairable” (being able to repair something) match more closely with an abstract class or interface?
+(5) Its more like implementation because than a concept. because different things can be fixed in different ways.
+
+What other related examples of abstract classes and interfaces come to mind?
+(6) Example: Computers, have alot in common, cars, planes, tvs and many more...
+
+=========> MORE NOTES <==========
+We will harness the power of inheritance and polymorphsm further in this lesson using more abstraction.
+Abstract Class - a more general class meant to be extended by other more specific subclasses
+extending from an abstract class is a “type of” relationship
+Interface - an aspect of something that may be made a part of another class
+implementing an interface is a “can do” or “can be” relationship
+Building b = new Library();
+abstract ConstructedThing
+abstract class Building
+Abstract class examples: Building
+    Sub-abstract Classes:
+        abstrct class PublicBuilding extends Building
+            class Library extends PublicBuilding
+            class CivicCenter extends PublicBuilding
+            class PoliceDepartment extends PublicBuilding
+            class FireHouse extends PublicBuilding
+        PrivateBuilding
+            House
+            Tent
+            Shed
+            Theater
+            MobileHome
+        abstract CommercialBuilding
+            class StorageShed
+            class Warehouse
+            class Factory
+            class BicycleRepairShop
+            class GroceryStore
+Interface examples:
+    ClimateControlled
+        adjustHeating()
+        adjustInsulation()
+    Portable
+        getCurrentLocation()
+        setNewLocation()
+        secureTransport()
+        moveToNewLocation()
+        setAllRecordsToNewLocation()
+    Accessible
+        getNewRequirements()
+        inspect()
+        adjustBathrooms()
+        adjustWalkways()
+        adjustDoors()
+    Serviceable
+        installElectricalWiring()
+        installPlumbing()
+        connectPower()
+        disconnectPower()
+        turnOnWater()
+        turnOffWater()
+        makeUtilityPayment()
+    Sellable
+        getCurrentOwner()
+        getOwnerHistory()
+        transferDeedOfOwnership()
+        buyerBackgroundCheck()
+        deriveFairMarketValue()
+    Rentable
+        getCurrentRenterInfo()
+        getRentalHistory()
+        addRentalRecord()
+        generateRentalContract()
+        setRentalRate()
+        setListingRentalStatus()
+    Maintainable
+    Securable
+-- More “Real World” Scenerio
+class ServerRequests
+  giveMePosts()
+  createAPost()
+  deleteAPost()
+Interface CRUDable {
+  create()
+  read()
+  update()
+  delete()
+}
+CRUDFactory {
+  CRUDable c = new MySQLPostsDataAccessObject();
+  CRUDable getPostsCrudableObject()
+    return c;
+}
+abstract class DataAccessObject
+  connect()
+  executeTransaction()
+  disconnect()
+class MySQLPostsDataAccessObject extends DataAccessObject implements CRUDable
+class MongoDBPostsDataAccessObject extends DataAccessObject implements CRUDable
+class MariaDBPostsDataAccessObject extends DataAccessObject implements CRUDable
