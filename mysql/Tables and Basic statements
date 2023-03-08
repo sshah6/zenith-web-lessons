@@ -1,0 +1,68 @@
+
+MYSQL Tables
+Schema is a word describing the columns and rows of the database(mysql)
+
+Table commands
+Creating tables
+
+CREATE TABLE table_name(
+    col1_name data_type,
+    ...
+    );
+
+CREATE TABLE IF NOT EXIST quotes( //
+
+);
+
+Example:
+CREATE TABLE guests(
+    name VARCHAR(100),
+    age TINYINT
+    );
+
+use data-base; //putting the table in this data-base
+
+#//Creating a table in database
+USE zenith_test_db;
+
+DROP TABLE contacts;
+
+CREATE TABLE contacts(
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  or  PRIMARY KEY (id),
+  name VARCHAR(100),
+  phone_number VARCHAR(40),
+  created_at DATE,
+  age TINYINT,
+ );
+
+#//SELECTS from database, if we have a table called books
+
+SELECT * from books #selects everything
+
+SELECT author FROM books        #//selects author for that ID
+WHERE id = 2;
+
+UPDATE books         #//updates of changes values for that ID
+SET author = "Hello"
+WHERE id = 3;
+
+DELETE FROM books       #// deletes the whole row
+WHERE id = 4;
+
+DELETE FROM books;      #//deletes the whole table
+
+//Deeper in WHERE clause
+
+Where first_name LIKE '%z'; #//where last name ends with z
+Where first_name LIKE 'z%'; #// where last name starts with z
+Where first_name LIKE '%z%'; #// where last name contains with z
+
+SELECT DISTINCT first_name From employees
+Where first_name LIKE "%z%";
+
+
+
+
+
+

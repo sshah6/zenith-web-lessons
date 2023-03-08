@@ -1,0 +1,13 @@
+Commands to use for mysql
+
+zenith_test_user
+creat user 'zenith_test_user'@'localhost' identified by 'codeup';
+
+show databases;  //shows the databases
+
+grant all on *.* to 'zenith_test_user'@'localhost';
+
+grant all on zenith_test_user.* to 'zenith_test_user'@'localhost';
+//Then we can log into the user and play with it
+
+show grants for 'zenith_test_user'@'localhost'; //shows the grants
